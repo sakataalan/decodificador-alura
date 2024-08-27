@@ -1,0 +1,168 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    height: 90vh;
+    background-color: #E5E5E5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 20px;
+    text-align: left;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #1a73e8;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+.input-section {
+    flex: 2;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.input-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+.input-section h2 {
+    margin-bottom: 20px;
+    color: #1a3c69;
+}
+
+.input-text {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #e8ebf1;
+    background-color: transparent; 
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start; 
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.criptografar {
+    background-color: #0A3871;
+    color: #fff;
+}
+
+.descriptografar {
+    background-color: #f0f2f5;
+    color: #333;
+    border: 1px solid #0A3871;
+}
+
+.copiar {
+    background-color: #f0f2f5;
+    color: #333;
+    border: 1px solid #0A3871;
+}
+
+small {
+    margin-top: 10px;
+    color: #7a7d82;
+    display: block;
+}
+
+.output-section {
+    flex: 1;
+    padding: 40px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.output-placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#text-to-copy {
+    margin-bottom: 20px; 
+}
+
+.output-placeholder img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.output-placeholder p {
+    margin: 10px 0;
+}
+
+.text-container {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .input-section {
+        padding: 20px;
+    }
+
+    .output-section {
+        padding: 20px;
+    }
+}
